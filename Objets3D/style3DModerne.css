@@ -58,7 +58,7 @@ header li a {
 /* ************************************* IMAGE PRINCIPALE ************************************* */
 #imagePrincipale {
     padding-top: 60px;
-    background: url(../../img/1fond3D.png);
+    background: url(../../img/fond3D.png);
     background-size: cover;
     height: 600px;
 }
