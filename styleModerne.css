@@ -162,6 +162,7 @@ nav .a2 {
     padding: 10px;
     text-align: center;
     font-size: large;
+    color: #0A4158;
     box-shadow: 5px 6px 8px#0A4158;
 }
 /* ************************************* FOOTER ************************************* */
@@ -228,6 +229,7 @@ button:hover {
 #icons a {
     display: inline-block;
     padding: 0 20px;
+    color: #0A4158;
 }
 
 @media screen and (max-width: 700px) {
@@ -260,6 +262,46 @@ button:hover {
         margin-top: -15px;
         font-size: small;
     }
+    #premierePresentation {
+        height: 400px;
+    }
+    #premierePresentationImages {
+        height: 150px;
+        margin: auto;
+    }
+    #deuxiemePresentationImages{
+        height: 180px;
+        margin: auto;
+    }
+    #deuxiemePresentationTexte {
+        font-size: small;
+        height: 200px;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+    }
+    #premierePresentationTexte {
+        font-size: small;
+        height: 250px;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+    }
+    #premierePresentationFond, #deuxiemePresentationFond {
+        flex-direction: column;
+        height: auto;
+        width: 300px;
+   }
+   #deuxiemePresentation {
+        height: 380px;
+   }
+   .basDePageFond {
+        width: 400px;
+   }
+   #icons a {
+        padding: 0 5px;
+   }
+
 
 }
 
@@ -289,16 +331,16 @@ button:hover {
         margin-top: -15px;
         font-size: small;
     }
-    #premierePresentationTexte, #premierePresentationImages {
+    #premierePresentationTexte, #deuxiemePresentationTexte {
         height: 360px;
     }
-    #deuxiemePresentationTexte, #deuxiemePresentationImages {
+    #premierePresentationImages, #deuxiemePresentationImages {
         height: 360px;
     }
-    #premierePresentation, #premierePresentationFond {
+    #premierePresentation, #deuxiemePresentation {
         height: 360px;
     }
-    #deuxiemePresentation, #deuxiemePresentationFond {
+    #premierePresentationFond, #deuxiemePresentationFond {
         height: 360px;
     }
     #premierePresentationFond, #deuxiemePresentationFond, .basDePageFond {
