@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+*, ::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gochi hand', cursive;
+    margin: 0;
+    padding: 0;
+}
+/* ************************************* NAVBAR ************************************* */
+nav {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    opacity: 0.8;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #E4D7D0;
+    border-bottom: 5px solid #FF9636;
+}
+nav #liens {
+    margin-top: 3px;
+    margin-left: 500px;
+}
+nav #liens a {
+    text-decoration: none;
+    border-bottom: 1px solid #FF9636;
+    padding-bottom: 5px;
+    color: #FF9636;
+    font-size: x-large;
+}
+nav .a2 {
+    margin: 0 20px;
+}
+/* ************************************* HAUT_DE_PAGE ************************************* */
+#imagePrincipale {
+    background: url(/img/fond.jpg);
+    height: 500px;
+    }
+.titre {
+    padding-top: 100px;
+    text-align: center;
+    color: #4B8378;
+    text-shadow: 3px 5px 5px black;
+    font-size: xxx-large;
+}
+.citation {
+    height: 130px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    color: #0A4158;
+    text-align: center;
+    font-size: x-large;    
+}
+.citation h4 {
+    margin-top: -20px;
+}
+.citation h5 {
+    margin-top: -20px;
+    font-size: large;
+}
+/* ************************************* PRESENTATION ************************************* */
+#premierePresentation {
+    height: 400px;
+    background-color: #E4D7D0;
+    padding: 30px;
+}
+#premierePresentationFond {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    height: 400px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 5px 6px 8px#0A4158;
+}
+#premierePresentationImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    height: 400px;
+}
+#premierePresentationImages img {
+    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+}
+#premierePresentationTexte {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 45%;
+    height: 400px;
+    margin: auto;
+    text-align: left;
+    font-size: medium;
+    color: #0A4158;
+}
+#deuxiemePresentation {
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+}
+#deuxiemePresentationFond {
+    background-color: #E4D7D0;
+    display: flex;
+    vertical-align: middle;
+    height: 400px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 5px 6px 8px#0A4158;
+}
+#deuxiemePresentationImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4D7D0;
+    width: 50%;
+    height: 400px;
+}
+#deuxiemePresentationImages img {
+    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+}
+#deuxiemePresentationTexte {
+    display: flex;
+    align-items: center;
+    background-color: #E4D7D0;
+    width: 45%;
+    height: 400px;
+    margin: auto;
+    padding-left: 40px;
+    text-align: left;
+    font-size: large;
+    color: #0A4158;
+}
+/* ************************************* BAS DE PAGE ************************************* */
+#basDePage {
+    display: flex;
+    background-color: #FF9636;
+    opacity: 0.8;
+    padding: 30px;
+    border-bottom: 5px solid #0A4158;
+}
+.basDePageFond {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    box-shadow: 5px 6px 8px#0A4158;
+}
+/* ************************************* FOOTER ************************************* */
+footer {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #0A4158;
+  }
+#contact {
+    text-shadow: 1px 3px 2px #4B8378;
+    font-size: xx-large;
+}
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button {
+    border: none;
+    width: 55%;
+    background-color: #FF9636;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: large;
+    font-family: 'Gochi Hand', sans-serif;
+    border-radius: 8px;
+}
+textarea {
+    height: 120px;
+}
+button {
+    font-size: x-large;
+    background-color: #FF9636;
+    color: #0A4158;
+}
+button:hover {
+    background-color: #0A4158;
+    color: #FF9636;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#deuxiemeTrait {
+    height: 3px;
+    width: 75%;
+    background-color: #FF9636;
+    margin: 60px auto;
+}
+#copyrightEtIcons {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding: 0 0 20px 0;
+}
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: #0A4158;
+    margin-top: -20px;
+}
+#icons {
+    width: 50%;
+    text-align: right;
+    margin-top: -20px;
+}
+#icons a {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        height: 130px;
+        padding-bottom: 10px;
+    }
+    nav #liens {
+        margin-left: 0;
+    }
+    nav #liens a {
+
+        font-size: large;
+    }
+    #imagePrincipale {
+        display: block;
+        height: 350px;  
+    }
+    .titre {
+        padding-top: 150px;
+        margin-top: -15px;
+        font-size: x-large;
+    }
+    .citation {
+        margin-top: -25px;
+        font-size: large;
+    }
+    .citation h5 {
+        margin-top: -15px;
+        font-size: small;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    nav {
+        display: flex;
+    }
+    nav #liens {
+        margin-left: 200px;
+    }
+    #imagePrincipale {
+        display: block;
+        height: 350px;
+    }
+    .titre {
+        padding-top: 150px;
+    }
+    .titre h1 {
+        margin-top: -20px;
+        font-size: xxx-large;
+    }
+    .citation {
+        margin-top: -30px;
+        font-size: large;
+    }
+    .citation h5 {
+        margin-top: -15px;
+        font-size: small;
+    }
+    #premierePresentationTexte, #premierePresentationImages {
+        height: 360px;
+    }
+    #deuxiemePresentationTexte, #deuxiemePresentationImages {
+        height: 360px;
+    }
+    #premierePresentation, #premierePresentationFond {
+        height: 360px;
+    }
+    #deuxiemePresentation, #deuxiemePresentationFond {
+        height: 360px;
+    }
+    #premierePresentationFond, #deuxiemePresentationFond, .basDePageFond {
+        width: 90%;
+    }
+}
