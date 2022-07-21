@@ -150,7 +150,8 @@ nav .a2 {
 /* ************************************* BAS DE PAGE ************************************* */
 #basDePage {
     display: flex;
-    background-color: #FF9636;
+    background: rgb(75,131,120);
+    background: linear-gradient(90deg, rgba(75,131,120,1) 0%, rgba(255,150,54,1) 100%);
     opacity: 0.8;
     padding: 30px;
     border-bottom: 5px solid #0A4158;
@@ -231,27 +232,27 @@ button:hover {
     padding: 0 20px;
     color: #0A4158;
 }
-
+/* en dessous de 700px */
 @media screen and (max-width: 700px) {
     nav {
-        flex-direction: column;
-        height: 130px;
-        padding-bottom: 10px;
+        display: flex;
+        margin-top: 10px;
     }
     nav #liens {
-        margin-left: 0;
+        margin-left: 100px;
     }
     nav #liens a {
-
+        display: block;
+        border: none;
         font-size: large;
     }
     #imagePrincipale {
         display: block;
-        height: 350px;  
+        height: 300px;  
     }
     .titre {
-        padding-top: 150px;
-        margin-top: -15px;
+        padding-top: 100px;
+        margin-top: -10px;
         font-size: x-large;
     }
     .citation {
@@ -304,7 +305,7 @@ button:hover {
 
 
 }
-
+/* entre 700 et 1000px */
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     nav {
         display: flex;
