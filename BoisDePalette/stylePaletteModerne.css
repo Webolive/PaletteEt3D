@@ -18,7 +18,6 @@ body {
 nav {
     position: fixed;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     opacity: 0.8;
     justify-content: center;
@@ -168,16 +167,50 @@ h2 {
 @media screen and (max-width: 700px) {
     nav {
         display: flex;
-        margin-top: 10px;
     }
     nav #liens {
-        margin-left: 100px;
+        margin: 0 110px;
     }
     nav #liens a {
         display: block;
         border: none;
         font-size: large;
     }
+    h1 {
+        font-size: xx-large;
+    }
+    h3 {
+        font-size: x-large;
+    }
+    h5 {
+        font-size: large;
+    }
+    #imagePrincipale {
+        display: block;        
+        height: 350px;
+    }
+    #premierTrait {
+        display: none;
+    }
+    .zoom {
+        width: 350px;
+        height: 400px;
+        margin: auto;
+    }
+    .image img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    #icons a {
+        padding: 0 5px;
+   }
+    #basDePage {
+        max-width: 300px;
+   }
+   #basDePage h2 {
+        font-size: x-large;
+   }
+
 }
 
 /* entre 700 et 1000px */
@@ -207,5 +240,8 @@ h2 {
     h5 {
         margin-top: -10px;
         font-size: medium;
+    }
+    .futur {
+        display: none;
     }
 }
