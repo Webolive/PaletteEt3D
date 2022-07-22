@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -25,6 +24,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #E4D7D0;
     border-bottom: 5px solid #FF9636;
 }
@@ -48,7 +48,6 @@ nav .a2 {
     background-size: cover;
     height: 600px;
 }
-
 h1 {
     text-align: center;
     color: #FF9636;
@@ -70,6 +69,7 @@ h3 {
 }
 h5 {
     text-align: center;
+    text-decoration: none;
     color: #0A4158;
     font-size: 2em;
     margin-top: 20px;
