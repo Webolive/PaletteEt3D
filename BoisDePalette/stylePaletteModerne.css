@@ -15,17 +15,6 @@ body {
     font-family: 'Amatic SC', cursive;
     background-color: #E4D7D0;
 }
-ul {
-    padding: 0;
-    margin: 0;
-}
-li {
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-    color: #0A4158;
-}
 /* ************************************* NAVBAR ************************************* */
 nav {
     position: fixed;
