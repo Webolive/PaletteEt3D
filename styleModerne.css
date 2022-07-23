@@ -317,6 +317,14 @@ button:hover {
         display: block;
         height: 350px;
     }
+    #premierePresentationImages img {
+            height: auto;
+            width: 200px;
+    }
+    #deuxiemePresentationImages img {
+        height: auto;
+        width: 200px;
+    }
     .titre {
         padding-top: 150px;
     }

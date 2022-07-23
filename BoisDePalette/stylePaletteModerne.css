@@ -203,14 +203,13 @@ h2 {
     }
     #icons a {
         padding: 0 5px;
-   }
+    }
     #basDePage {
         max-width: 300px;
-   }
+    }
    #basDePage h2 {
         font-size: x-large;
-   }
-
+    }
 }
 
 /* entre 700 et 1000px */
