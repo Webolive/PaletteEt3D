@@ -43,7 +43,8 @@ nav .a2 {
 #imagePrincipale {
     background: url(img3D/fond3D.jpg);
     background-size: cover;
-    height: 600px;
+    background-position: center;
+    height: 500px;
 }
 .titre {
     padding-top: 80px;
