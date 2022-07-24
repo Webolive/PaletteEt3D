@@ -1,96 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
 *, ::before ::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Kanit', cursive;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     padding: 0;
     margin: 0;
-}
-ul {
-    padding: 0;
-    margin: 0;
-}
-li {
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-    color: #0A4158;
+    font-family: 'Kanit', cursive;
 }
 /* ************************************* NAVBAR ************************************* */
 nav {
-    overflow: hidden;
-    background-color: #E4D7D0;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
+    background-color: #E4D7D0;
+    border-bottom: 5px solid #FF9636;
 }
-header li {
-    float: right;
-    font-size: 1.5em;
+nav #liens {
+    margin-left: 500px;
 }
-header li a {
+nav #liens a {
     text-decoration: none;
-    display: block;
-    text-align: center;
-    padding: 15px 15px;
+    border-bottom: 1px solid #FF9636;
+    padding-bottom: 5px;
     color: #FF9636;
+    font-size: x-large;
 }
-#logo {
-    height: 100px;
-    width: 10%;
-    max-width: 90px;
-    float: left;
-}
-#meContacter {
-    padding: 25px 16px;
-}
-#langue {
-    padding: 25px 16px;
+nav .a2 {
+    margin: 0 20px;
 }
 /* ************************************* IMAGE PRINCIPALE ************************************* */
 #imagePrincipale {
-    padding-top: 60px;
-    background: url(../img/fond3D.png);
+    background: url(img3D/fond3D.jpg);
     background-size: cover;
     height: 600px;
 }
-#imagePrincipale a {
-    color: #0A4158;
-}
-h1 {
+.titre {
+    padding-top: 80px;
     text-align: center;
-    color: #FF9636;
-    font-size: 6em;
-    margin-top: 110px;
-    text-shadow: 1px 3px 5px #0A4158;
+    color: #4B8378;
+    text-shadow: 3px 5px 5px black;
+    font-size: xxx-large;
 }
-#premierTrait {
-    height: 3px;
-    width: 25%;
-    margin: 3% auto;
-    background-color: #FF9636;
-    box-shadow: 1px 3px 2px #4B8378;
-}    
-h3 {
-    text-align: center;
+.citation {
+    height: 130px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
     color: #0A4158;
-    font-size: 2.5em;
-    text-shadow: 2px 4px 2px #4B8378;
+    text-align: center;
+    font-size: x-large;    
 }
-h5 {
-    text-align: center;
-    color: #0A4158;
-    font-size: 2em;
-    margin-top: 20px;
-    text-shadow: 2px 4px 2px #4B8378;
+.citation h4 {
+    margin-top: -20px;
+}
+.citation h5 {
+    margin-top: -20px;
+    font-size: large;
 }
 /* ************************************* PRESENTATION ************************************* */
 #Presentation {
@@ -114,3 +90,45 @@ h4 {
     color: #0A4158;
 }
 
+@media screen and (max-width: 700px) {
+    nav {
+        display: flex;
+    }
+    nav #liens {
+        margin-left: 100px;
+    }
+    nav #liens a {
+        display: block;
+        border: none;
+        font-size: large;
+    }
+    #imagePrincipale {
+        display: block;
+        height: 320px;  
+    }
+    .titre {
+        padding-top: 120px;
+        font-size: large;
+    }
+    .citation {
+        position: absolute;
+        margin-top: 20px;
+        font-size: small;
+    }
+    .citation h5 {
+        margin-top: -15px;
+        font-size: small;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    nav {
+        display: flex;
+    }
+    nav #liens {
+        margin-left: 200px;
+    }
+    #imagePrincipale {
+        display: block;
+        height: 500px;
+    }
+}
