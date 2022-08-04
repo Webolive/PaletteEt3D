@@ -149,13 +149,15 @@ nav .a2 {
 /* ************************************* BAS DE PAGE ************************************* */
 #basDePage {
     display: flex;
-    background: rgb(75,131,120);
     background: linear-gradient(90deg, rgba(75,131,120,1) 0%, rgba(255,150,54,1) 100%);
     opacity: 0.8;
     padding: 30px;
     border-bottom: 5px solid #0A4158;
 }
-.basDePageFond {
+#basDePageWorld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     width: 60%;
     margin: auto;
@@ -164,6 +166,9 @@ nav .a2 {
     font-size: large;
     color: #0A4158;
     box-shadow: 5px 6px 8px#0A4158;
+}
+.world h1 {
+    text-align: center;
 }
 /* ************************************* FOOTER ************************************* */
 footer {
@@ -287,18 +292,18 @@ button:hover {
         text-align: center;
         padding: 0;
     }
-    #premierePresentationFond, #deuxiemePresentationFond {
+    #premierePresentationFond, #deuxiemePresentationFond, #basDePageWorld {
         flex-direction: column;
         height: auto;
         width: 300px;
-   }
-   #deuxiemePresentation {
+    }
+    #deuxiemePresentation {
         height: 380px;
-   }
-   .basDePageFond {
-        width: 400px;
-   }
-   #icons a {
+    }
+    .world {
+        font-size: small;
+    }
+    #icons a {
         padding: 0 5px;
    }
 
@@ -351,7 +356,7 @@ button:hover {
     #premierePresentationFond, #deuxiemePresentationFond {
         height: 360px;
     }
-    #premierePresentationFond, #deuxiemePresentationFond, .basDePageFond {
+    #premierePresentationFond, #deuxiemePresentationFond, #basDePageWorld {
         width: 90%;
     }
 }
