@@ -42,15 +42,39 @@ nav .a2 {
 /* ************************************* HAUT_DE_PAGE ************************************* */
 #imagePrincipale {
     background: url(img/fond.jpg);
-    height: 500px;
+    height: 400px;
     }
 .titre {
+    display: flex;
+    justify-content: center;
     padding-top: 100px;
-    text-align: center;
-    color: #4B8378;
-    text-shadow: 3px 5px 5px black;
+    background: transparent;
     font-size: xxx-large;
 }
+.titre h1 {
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+}
+.titre h1::before {
+    content: attr(data-text);
+    position: absolute;
+    height: 100%;
+    background: -webkit-linear-gradient(rgba(255,150,54,1) 0%, rgba(75,131,120,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 5s linear forwards;
+}
+@keyframes animate
+{
+    0%, 20% {
+        width: 0;
+    }
+    40%, 70%, 100% {
+        width: 100%;
+    }
+}
+
 .citation {
     height: 130px;
     max-width: 100%;
@@ -159,7 +183,7 @@ nav .a2 {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    width: 60%;
+    width: 50%;
     margin: auto;
     padding: 10px;
     text-align: center;
@@ -239,33 +263,38 @@ button:hover {
 /* en dessous de 700px */
 @media screen and (max-width: 700px) {
     nav {
-        display: flex;
-        margin-top: 10px;
+        margin-top: 20px;
+    }
+    nav #logo {
+        padding-top: 20px;
     }
     nav #liens {
         margin-left: 100px;
+        padding-top: 20px;
     }
     nav #liens a {
         display: block;
         border: none;
-        font-size: large;
+        font-size: 1em;
+    }
+    .titre h1 {
+        font-size: x-large;
     }
     #imagePrincipale {
         display: block;
-        height: 300px;  
+        height: 250px;
     }
-    .titre {
-        padding-top: 100px;
-        margin-top: -10px;
-        font-size: x-large;
+    #imagePrincipale .titre {
+        padding-top: 150px;
+        margin-top: -30px;
     }
     .citation {
-        margin-top: -25px;
-        font-size: large;
+        margin-top: -20px;
+        font-size: 0.8em;
     }
     .citation h5 {
         margin-top: -15px;
-        font-size: small;
+        font-size: 0.7em;
     }
     #premierePresentation {
         height: 400px;
@@ -279,14 +308,14 @@ button:hover {
         margin: auto;
     }
     #deuxiemePresentationTexte {
-        font-size: small;
+        font-size: 0.8em;
         height: 200px;
         width: 90%;
         text-align: center;
         padding: 0;
     }
     #premierePresentationTexte {
-        font-size: small;
+        font-size: 0.8em;
         height: 250px;
         width: 90%;
         text-align: center;
@@ -300,8 +329,11 @@ button:hover {
     #deuxiemePresentation {
         height: 380px;
     }
+    .basDePageFond {
+        font-size: 0.8em;
+    }
     .world {
-        font-size: small;
+        font-size: 0.8em;
     }
     #icons a {
         padding: 0 5px;
@@ -319,7 +351,7 @@ button:hover {
     }
     #imagePrincipale {
         display: block;
-        height: 350px;
+        height: 300px;
     }
     #premierePresentationImages img {
             height: auto;
