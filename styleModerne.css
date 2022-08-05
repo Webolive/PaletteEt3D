@@ -63,8 +63,8 @@ nav .a2 {
     background: -webkit-linear-gradient(rgba(255,150,54,1) 0%, rgba(75,131,120,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animate 5000ms linear forwards;
-    animation-delay: 3000ms;
+    animation: animate 4000ms linear forwards;
+    animation-delay: 2000ms;
 }
 @keyframes animate
 {
