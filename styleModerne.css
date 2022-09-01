@@ -44,7 +44,12 @@ nav .a2 {
 /* ************************************* HAUT_DE_PAGE ************************************* */
 #imagePrincipale {
     background: url(img/fond.jpg);
-    height: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     }
 .titre {
     display: flex;
@@ -52,11 +57,13 @@ nav .a2 {
     padding-top: 100px;
     background: transparent;
     font-size: xxx-large;
+    width: 90vw;
 }
 .titre h1 {
     position: relative;
     text-transform: uppercase;
     color: transparent;
+    font-size: 3.5rem;
 }
 .titre h1::before {
     content: attr(data-text);
@@ -82,124 +89,116 @@ nav .a2 {
     height: 130px;
     max-width: 100%;
     max-height: 100%;
-    margin: auto;
     color: #0A4158;
     text-align: center;
     font-size: x-large;    
 }
 .citation h4 {
-    margin-top: -20px;
+    margin-top: 50px;
 }
 .citation h5 {
-    margin-top: -20px;
+    padding-top: 50px;
     font-size: large;
 }
 /* ************************************* PRESENTATION ************************************* */
-#premierePresentation {
-    height: 400px;
-    background-color: #E4D7D0;
-    padding: 30px;
-}
-#premierePresentationFond {
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    vertical-align: middle;
-    height: 400px;
-    width: 60%;
-    margin: auto;
-    box-shadow: 5px 6px 8px#0A4158;
-}
-#premierePresentationImages {
+#Palettes, #TroisD {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    height: 500px;
+}
+
+#Palettes {
+    background-color: #E4D7D0;
+
+}
+.PalettesFond, .TroisDFond {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+    height: 400px;
+    width: 80%;
+    box-shadow: 5px 6px 8px#0A4158;
+}
+
+.PalettesFond {
+    background-color: #fff;
+}
+
+.PalettesImages, .TroisDImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     height: 400px;
 }
-#premierePresentationImages img {
+
+.PalettesImages img, .TroisDImages img {
     width: 300px;
     max-width: 100%;
     max-height: 100%;
 }
-#premierePresentationTexte {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    width: 45%;
-    height: 400px;
-    margin: auto;
-    text-align: left;
-    font-size: medium;
-    color: #0A4158;
-}
-#deuxiemePresentation {
-    height: 400px;
-    background-color: #fff;
-    padding: 30px;
-}
-#deuxiemePresentationFond {
-    background-color: #E4D7D0;
-    display: flex;
-    vertical-align: middle;
-    height: 400px;
-    width: 60%;
-    margin: auto;
-    box-shadow: 5px 6px 8px#0A4158;
-}
-#deuxiemePresentationImages {
+.PalettesTexte, .TroisDTexte {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E4D7D0;
-    width: 50%;
-    height: 400px;
-}
-#deuxiemePresentationImages img {
-    width: 300px;
-    max-width: 100%;
-    max-height: 100%;
-}
-#deuxiemePresentationTexte {
-    display: flex;
-    align-items: center;
-    background-color: #E4D7D0;
     width: 45%;
     height: 400px;
-    margin: auto;
-    padding-left: 40px;
     text-align: left;
-    font-size: large;
+    font-size: 1.075rem;
     color: #0A4158;
 }
+
+.PalettesTexte {
+    background-color: #fff;
+    padding-right: 20px;
+}
+
+.TroisDFond {
+    background-color: #E4D7D0;
+}
+
+.TroisDTexte {
+    padding-left: 30px;
+}
+
 /* ************************************* BAS DE PAGE ************************************* */
 #basDePage {
     display: flex;
-    background: linear-gradient(90deg, rgba(75,131,120,1) 0%, rgba(255,150,54,1) 100%);
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(75,131,120,1) 0%, rgba(255,150,54,1) 100%);
     opacity: 0.8;
-    padding: 30px;
     border-bottom: 5px solid #0A4158;
 }
-#basDePageWorld {
+.basDePageWorld {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    height: 190px;
     background-color: #fff;
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: large;
-    color: #0A4158;
     box-shadow: 5px 6px 8px#0A4158;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0A4158;
 }
+.basDePageFond {
+    padding: 0 30px;
+}
+
 .world h1 {
     text-align: center;
 }
+
+.world {
+    margin-right: 20px;
+}
 /* ************************************* FOOTER ************************************* */
 footer {
-    padding: 10px 0 10px 0;
+    padding: 30px 0 10px 0;
     text-align: center;
     color: #0A4158;
   }
@@ -264,10 +263,8 @@ button:hover {
     color: #0A4158;
 }
 /* en dessous de 700px */
+
 @media screen and (max-width: 700px) {
-    nav {
-        margin-top: 20px;
-    }
     nav #logo {
         padding-top: 20px;
     }
@@ -280,58 +277,47 @@ button:hover {
         border: none;
         font-size: 1em;
     }
-    .titre h1 {
-        font-size: x-large;
-    }
+    
     #imagePrincipale {
-        display: block;
+        display: flex;
         height: 250px;
+        margin: 0;
     }
-    #imagePrincipale .titre {
-        padding-top: 150px;
-        margin-top: -30px;
+
+    .titre {
+        padding-top: 100px;
+    }
+    .titre h1 {
+        font-size: 1.3rem;
     }
     .citation {
-        margin-top: -20px;
+        height: 50px;
         font-size: 0.8em;
     }
-    .citation h5 {
-        margin-top: -15px;
-        font-size: 0.7em;
+    .citation h4 {
+        margin: 20px;
     }
-    #premierePresentation {
+
+    .citation h5 {
+        padding-top: 5px;
+        font-size: 0.7rem;
+    }
+
+    #palettes {
         height: 400px;
     }
-    #premierePresentationImages {
-        height: 150px;
-        margin: auto;
-    }
-    #deuxiemePresentationImages{
-        height: 180px;
-        margin: auto;
-    }
-    #deuxiemePresentationTexte {
-        font-size: 0.8em;
-        height: 200px;
-        width: 90%;
-        text-align: center;
-        padding: 0;
-    }
-    #premierePresentationTexte {
-        font-size: 0.8em;
-        height: 250px;
-        width: 90%;
-        text-align: center;
-        padding: 0;
-    }
-    #premierePresentationFond, #deuxiemePresentationFond, #basDePageWorld {
+
+    .PalettesFond, .TroisDFond {
         flex-direction: column;
-        height: auto;
-        width: 300px;
+        width: 90%;
+        height: 450px;
     }
-    #deuxiemePresentation {
-        height: 380px;
+    
+    .PalettesTexte, .TroisDTexte {
+        width: 90%;
+        font-size: 0.8rem;
     }
+
     .basDePageFond {
         font-size: 0.8em;
     }
@@ -340,11 +326,27 @@ button:hover {
     }
     #icons a {
         padding: 0 5px;
-   }
+    }
+
+    #basDePage {
+        height: 500px;
+    }
+    .basDePageWorld {
+        flex-direction: column;
+        height: 400px;
+    }
+    .basDePageFond {
+        padding: 20px 40px;
+    }
+    .world {
+        margin: 0;
+    }
+
 
 
 }
 /* entre 700 et 1000px */
+
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     nav {
         display: flex;
@@ -353,7 +355,7 @@ button:hover {
         margin-left: 200px;
     }
     #imagePrincipale {
-        display: block;
+        display: flex;
         height: 300px;
     }
     #premierePresentationImages img {
@@ -369,7 +371,7 @@ button:hover {
     }
     .titre h1 {
         margin-top: -20px;
-        font-size: xxx-large;
+        font-size: 2rem;
     }
     .citation {
         margin-top: -30px;
@@ -379,19 +381,21 @@ button:hover {
         margin-top: -15px;
         font-size: small;
     }
-    #premierePresentationTexte, #deuxiemePresentationTexte {
-        height: 360px;
+    .PalettesTexte, .TroisDTexte {
+        font-size: 0.90rem;
     }
-    #premierePresentationImages, #deuxiemePresentationImages {
-        height: 360px;
+    .PalettesImages img, .TroisDImages img {
+        width: 250px;
+        max-width: 100%;
+        max-height: 100%;
     }
-    #premierePresentation, #deuxiemePresentation {
-        height: 360px;
-    }
-    #premierePresentationFond, #deuxiemePresentationFond {
-        height: 360px;
-    }
-    #premierePresentationFond, #deuxiemePresentationFond, #basDePageWorld {
+    .Palettes, .TroisD {
+        height: 350px;
         width: 90%;
+        box-shadow: 5px 6px 8px#0A4158;
+    }
+
+    .basDePageWorld {
+        font-size: 1rem;
     }
 }
