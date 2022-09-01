@@ -239,15 +239,11 @@ h2 {
         margin-left: 200px;
     }
     #imagePrincipale {
-        display: block;
         height: 260px;
         font-size: small;
     }
-    #premierTrait {
-        display: none;
-    }
     h1 {
-        margin-top: 70px;
+        margin-top: 40px;
         font-size: xxx-large;
     }
     h3 {
@@ -260,5 +256,13 @@ h2 {
     }
     .futur {
         display: none;
+    }
+    .image:hover img {
+        /* L'image est grossie de 25% */
+        -webkit-transform:scale(1.5); /* Safari et Chrome */
+        -moz-transform:scale(1.5); /* Firefox */
+        -ms-transform:scale(1.5); /* Internet Explorer 9 */
+        -o-transform:scale(1.5); /* Opera */
+        transform:scale(1.5);
     }
 }
