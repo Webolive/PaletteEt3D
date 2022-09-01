@@ -44,7 +44,8 @@ nav .a2 {
 /* ************************************* HAUT_DE_PAGE ************************************* */
 #imagePrincipale {
     background: url(img/fond.jpg);
-    height: 450px;
+    background-size: cover;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,8 +57,6 @@ nav .a2 {
     justify-content: center;
     padding-top: 100px;
     background: transparent;
-    font-size: xxx-large;
-    width: 90vw;
 }
 .titre h1 {
     position: relative;
@@ -72,8 +71,8 @@ nav .a2 {
     background: -webkit-linear-gradient(rgba(255,150,54,1) 0%, rgba(75,131,120,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animate 4000ms linear forwards;
-    animation-delay: 500ms;
+    animation: animate 2000ms linear forwards;
+    animation-delay: 700ms;
 }
 @keyframes animate
 {
@@ -91,14 +90,14 @@ nav .a2 {
     max-height: 100%;
     color: #0A4158;
     text-align: center;
-    font-size: x-large;    
+    font-size: 1.8rem;    
 }
 .citation h4 {
     margin-top: 50px;
 }
 .citation h5 {
     padding-top: 50px;
-    font-size: large;
+    font-size: 1.3rem;
 }
 /* ************************************* PRESENTATION ************************************* */
 #Palettes, #TroisD {
@@ -146,7 +145,7 @@ nav .a2 {
     width: 45%;
     height: 400px;
     text-align: left;
-    font-size: 1.075rem;
+    font-size: 1.1rem;
     color: #0A4158;
 }
 
@@ -182,7 +181,7 @@ nav .a2 {
     background-color: #fff;
     box-shadow: 5px 6px 8px#0A4158;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #0A4158;
 }
 .basDePageFond {
@@ -204,7 +203,7 @@ footer {
   }
 #contact {
     text-shadow: 1px 3px 2px #4B8378;
-    font-size: xx-large;
+    font-size: 1.8rem;
 }
 form {
     margin: 0 auto;
@@ -216,7 +215,7 @@ input, textarea, button {
     background-color: #FF9636;
     padding: 15px 10px;
     margin: 1px 0;
-    font-size: large;
+    font-size: 1.1rem;
     font-family: 'Gochi Hand', sans-serif;
     border-radius: 8px;
 }
@@ -224,7 +223,7 @@ textarea {
     height: 120px;
 }
 button {
-    font-size: x-large;
+    font-size: 1.6rem;
     background-color: #FF9636;
     color: #0A4158;
 }
@@ -279,47 +278,57 @@ button:hover {
     }
     
     #imagePrincipale {
-        display: flex;
-        height: 250px;
-        margin: 0;
+        height: 300px;
     }
 
     .titre {
-        padding-top: 100px;
+        text-align: center;
     }
     .titre h1 {
-        font-size: 1.3rem;
+        width: 52%;
+        font-size: 1.2rem;
     }
     .citation {
         height: 50px;
         font-size: 0.8em;
     }
     .citation h4 {
+        font-size: 1rem;
         margin: 20px;
     }
 
     .citation h5 {
-        padding-top: 5px;
-        font-size: 0.7rem;
+        padding-top: 0;
+        font-size: 0.9rem;
     }
 
-    #palettes {
-        height: 400px;
+    #Palettes, #TroisD {
+        height: 600px;
     }
 
     .PalettesFond, .TroisDFond {
         flex-direction: column;
         width: 90%;
-        height: 450px;
+        height: 550px;
     }
-    
+    .PalettesImages img, .TroisDImages img {
+        width: 200px;
+        max-width: 100%;
+    }
     .PalettesTexte, .TroisDTexte {
         width: 90%;
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+    .PalettesTexte {
+        padding: 0 0 20px 5px;
+    }
+    .TroisDTexte {
+        padding-top: 20px;
+        padding-left: 5px;
     }
 
     .basDePageFond {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .world {
         font-size: 0.8em;
@@ -334,6 +343,8 @@ button:hover {
     .basDePageWorld {
         flex-direction: column;
         height: 400px;
+        width: 90%;
+        font-size: 1.1rem;
     }
     .basDePageFond {
         padding: 20px 40px;
@@ -341,6 +352,7 @@ button:hover {
     .world {
         margin: 0;
     }
+    
 
 
 
@@ -355,37 +367,29 @@ button:hover {
         margin-left: 200px;
     }
     #imagePrincipale {
-        display: flex;
         height: 300px;
     }
-    #premierePresentationImages img {
-            height: auto;
-            width: 200px;
-    }
-    #deuxiemePresentationImages img {
-        height: auto;
-        width: 200px;
-    }
     .titre {
-        padding-top: 150px;
+        padding-top: 130px;
     }
     .titre h1 {
-        margin-top: -20px;
         font-size: 2rem;
     }
     .citation {
-        margin-top: -30px;
-        font-size: large;
+        font-size: 1.2rem;
+    }
+    .citation h4 {
+        margin-top: 10px;
     }
     .citation h5 {
-        margin-top: -15px;
-        font-size: small;
+        padding-top: 10px;
+        font-size: 1.3rem;
     }
     .PalettesTexte, .TroisDTexte {
         font-size: 0.90rem;
     }
     .PalettesImages img, .TroisDImages img {
-        width: 250px;
+        width: 220px;
         max-width: 100%;
         max-height: 100%;
     }
@@ -394,7 +398,6 @@ button:hover {
         width: 90%;
         box-shadow: 5px 6px 8px#0A4158;
     }
-
     .basDePageWorld {
         font-size: 1rem;
     }
