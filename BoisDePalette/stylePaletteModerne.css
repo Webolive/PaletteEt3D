@@ -45,32 +45,30 @@ nav .a2 {
     padding-top: 60px;
     background: url(imgPal/fond.jpg);
     background-size: cover;
-    height: 600px;
+    height: 500px;
+}
+#imagePrincipale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 h1 {
     text-align: center;
     color: #FF9636;
-    font-size: 6em;
-    margin-top: 110px;
+    font-size: 4rem;
     text-shadow: 1px 3px 5px #0A4158;
-}
-#premierTrait {
-    height: 3px;
-    width: 25%;
-    margin: 3% auto;
-    background-color: #FF9636;
-    box-shadow: 1px 3px 2px #4B8378;
-}    
+} 
 h3 {
     text-align: center;
     color: #0A4158;
-    font-size: 2.5em;
+    font-size: 2em;
 }
-h5 {
+a {
     text-align: center;
     text-decoration: none;
     color: #0A4158;
-    font-size: 2em;
+    font-size: 1.7em;
     margin-top: 20px;
 }
 /* ************************************* PRESENTATION ************************************* */
@@ -174,23 +172,23 @@ h2 {
     nav #liens a {
         display: block;
         border: none;
-        font-size: large;
+        font-size: 1.1rem;
     }
     h1 {
-        font-size: xx-large;
+        font-size: 2rem;
+        padding-top: 40px;
     }
     h3 {
-        font-size: x-large;
+        font-size: 1.3rem;
+    }
+    a {
+        font-size: 1.2rem;
     }
     h5 {
         font-size: large;
     }
     #imagePrincipale {
-        display: block;        
-        height: 350px;
-    }
-    #premierTrait {
-        display: none;
+        height: 300px;
     }
     .zoom {
         width: 350px;
@@ -199,15 +197,35 @@ h2 {
     }
     .image img {
         max-width: 300px;
-        max-height: 300px;
+        max-height: 300px;    
     }
+    image:hover img {
+        transform: none;
+    }
+
+
+    .image img {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+    .image:hover img {
+        -webkit-transform:none;
+        -moz-transform:none;
+        -ms-transform:none;
+        -o-transform:none;
+        transform:none;
+    }
+
     #icons a {
         padding: 0 5px;
     }
     #basDePage {
         max-width: 300px;
     }
-   #basDePage h2 {
+    #basDePage h2 {
         font-size: x-large;
     }
 }
