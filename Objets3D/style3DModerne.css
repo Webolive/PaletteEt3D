@@ -219,14 +219,7 @@ button:hover i:nth-child(3) {
     }
 }
 @media screen and (min-width: 700px) and (max-width: 1000px) {
-    nav {
-        display: flex;
-    }
     nav #liens {
         margin-left: 200px;
-    }
-    #imagePrincipale {
-        display: block;
-        height: 500px;
     }
 }
