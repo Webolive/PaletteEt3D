@@ -34,41 +34,49 @@ nav #liens a {
     border-bottom: 1px solid #FF9636;
     padding-bottom: 5px;
     color: #0A4158;
-    font-size: x-large;
+    font-size: 1.6rem;
 }
 nav .a2 {
     margin: 0 20px;
 }
 /* ************************************* IMAGE PRINCIPALE ************************************* */
 #imagePrincipale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: url(img3D/fond3D.jpg);
     background-size: cover;
     background-position: center;
     height: 500px;
 }
 .titre {
-    padding-top: 80px;
+    padding-top: 20px;
     text-align: center;
     color: #4B8378;
     text-shadow: 3px 5px 5px black;
-    font-size: xxx-large;
+    font-size: 3rem;
 }
 .citation {
-    height: 130px;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    color: #0A4158;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    width: 60%;
+    font-size: 1.8rem;
     text-align: center;
-    font-size: x-large;    
+    color: #0A4158;
+
 }
-.citation h4 {
-    margin-top: -20px;
+
+.citation a {
+    text-decoration: none;
+    color: #0A4158;
 }
-.citation h5 {
-    margin-top: -20px;
-    font-size: large;
-}
+
 /* ************************************* PRESENTATION ************************************* */
 #Presentation {
     background-color: #E4D7D0;
@@ -77,8 +85,10 @@ nav .a2 {
 }
 #photosVideos {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 30px 20%;  
 }
 .imagesRasoir img {
@@ -91,6 +101,7 @@ h4 {
     color: #0A4158;
 }
 
+/* ******************************** BOUTON LIEN EXTERNE ******************************** */
 
 button {
     font-size: 1.5em;
@@ -176,21 +187,35 @@ button:hover i:nth-child(3) {
         font-size: large;
     }
     #imagePrincipale {
-        display: block;
-        height: 320px;  
+        display: flex;
+        padding-top: 60px;
+        height: 280px;  
     }
     .titre {
-        padding-top: 120px;
         font-size: large;
     }
-    .citation {
-        position: absolute;
-        margin-top: 20px;
-        font-size: small;
+    
+    .citation h2 {
+        font-size: 0.8rem;
     }
-    .citation h5 {
-        margin-top: -15px;
-        font-size: small;
+    .citation a {
+        font-size: 0.7rem;    
+    }
+    #photosVideos {
+        padding: 0;
+    }
+    h4 {
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px 50px;
+    }
+    .autres {
+        width: 70%;
+    }
+    .arrow {
+        padding-top: 50px;
     }
 }
 @media screen and (min-width: 700px) and (max-width: 1000px) {
