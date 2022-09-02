@@ -105,14 +105,16 @@ h5 {
 }
 .imagessolo {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
 }
 .videosRasoir {
     box-shadow: 6px 6px 28px -1px rgb(83, 59, 59);
 }
 .videosolo {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
 }
 #vue3D {
     display: flex;
