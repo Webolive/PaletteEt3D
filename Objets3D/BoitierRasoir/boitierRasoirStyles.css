@@ -94,27 +94,22 @@ h5 {
 .photosVideos {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    padding: 30px 20%;  
-    font-size: 1.5em;
+    justify-content: space-between;
 }
 .imagesRasoir img {
     border-radius: 10px;
     box-shadow: 6px 6px 28px -1px rgb(83, 59, 59);
     pointer-events: none;
 }
-.imagessolo {
+.imagessolo, .videosolo {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     width: 70%;
 }
 .videosRasoir {
     box-shadow: 6px 6px 28px -1px rgb(83, 59, 59);
-}
-.videosolo {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
 }
 #vue3D {
     display: flex;
