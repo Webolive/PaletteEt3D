@@ -106,7 +106,7 @@ h5 {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 .imagessolo {
@@ -138,7 +138,20 @@ h5 {
 }
 
 @media screen and (max-width: 700px) {
-
+    .imagessolo, .videosolo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        /* width: 70%; */
+        margin: auto;
+    }
+    .imagessolo {
+        padding: 50px 0;
+    }
+    .videosRasoir {
+        box-shadow: 6px 6px 28px -1px rgb(83, 59, 59);
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
