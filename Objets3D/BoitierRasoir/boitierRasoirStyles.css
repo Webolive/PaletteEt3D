@@ -107,6 +107,10 @@ h5 {
     justify-content: space-between;
     flex-direction: row;
     width: 70%;
+    margin: auto;
+}
+.imagessolo {
+    padding: 100px 0;
 }
 .videosRasoir {
     box-shadow: 6px 6px 28px -1px rgb(83, 59, 59);
