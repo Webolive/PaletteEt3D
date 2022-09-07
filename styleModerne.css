@@ -201,68 +201,111 @@ footer {
     text-align: center;
     color: #0A4158;
   }
-#contact {
-    text-shadow: 1px 3px 2px #4B8378;
-    font-size: 1.8rem;
-}
-form {
-    margin: 0 auto;
-    max-width: 900px;
-}
-input, textarea, button {
-    border: none;
-    width: 55%;
-    background-color: #FF9636;
-    padding: 15px 10px;
-    margin: 1px 0;
-    font-size: 1.1rem;
-    font-family: 'Gochi Hand', sans-serif;
-    border-radius: 8px;
-}
-textarea {
-    height: 120px;
-}
-button {
-    font-size: 1.6rem;
-    background-color: #FF9636;
-    color: #0A4158;
-}
-button:hover {
-    background-color: #0A4158;
-    color: #FF9636;
+#infosPerso {
     cursor: pointer;
-    transition: 0.3s ease-in-out;
 }
-#deuxiemeTrait {
-    height: 3px;
-    width: 75%;
-    background-color: #FF9636;
-    margin: 60px auto;
+#infosPerso a {
+    color: #0A4158;
+    text-shadow: 1px 3px 2px #4B8378;
+    font-size: 2.5rem;
+    text-decoration: none;
 }
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.button {
+    padding: 0.2em 3em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #4B8378;
+    color: #E4D7D0;
+    border: 2px solid #0A4158;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.button:hover {
+    box-shadow: #0A4158;
+    color: #FF9636;
+}
+.button::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #0A4158;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    bottom: -50px;
+    z-index: -1;
+    transition: all 300ms ease-in;
+}
+.button:hover::before {
+    width: 220px;
+    height: 220px;
+}
+.button::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 6px solid #E4D7D0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    animation: plus 1.5s infinite;
+}
+@keyframes plus {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+.button:hover::after {
+    animation: none;
+    display: none;
+}
+
 #copyrightEtIcons {
     display: flex;
-    width: 75%;
-    margin: auto;
-    padding: 0 0 20px 0;
-}
+    align-items: center;
+    justify-content: center;
+margin-bottom: 50px;}
 #copyright {
     width: 50%;
     text-align: left;
     color: #0A4158;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 #icons {
     width: 50%;
     text-align: right;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 #icons a {
     display: inline-block;
     padding: 0 20px;
     color: #0A4158;
 }
-/* en dessous de 700px */
 
+
+/* en dessous de 700px */
 @media screen and (max-width: 700px) {
     nav #logo {
         padding-top: 20px;
