@@ -284,17 +284,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-margin-bottom: 50px;}
+    margin-bottom: 50px;
+}
 #copyright {
     width: 50%;
     text-align: left;
     color: #0A4158;
-    /* margin-top: -20px; */
 }
 #icons {
     width: 50%;
     text-align: right;
-    /* margin-top: -20px; */
 }
 #icons a {
     display: inline-block;
