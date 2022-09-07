@@ -233,13 +233,12 @@ footer {
     z-index: 1;
 }
 .button:hover {
-    box-shadow: #0A4158;
     color: #FF9636;
 }
 .button::before {
     content: '';
-    width: 5px;
-    height: 5px;
+    width: 15px;
+    height: 15px;
     background-color: #0A4158;
     border-radius: 50%;
     position: absolute;
@@ -395,6 +394,19 @@ margin-bottom: 50px;}
     }
     .world {
         margin: 0;
+    }
+    .button {
+        width: 200px;
+        font-size: 0.875rem;
+    }
+    .button:hover::before {
+        width: 140px;
+        height: 100px;
+    }
+    .button::after {
+        top: 25%;
+        left: 25%;
+        transform: translate(-25%,-25%);
     }
     
 
