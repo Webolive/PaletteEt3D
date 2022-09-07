@@ -201,9 +201,7 @@ footer {
     text-align: center;
     color: #0A4158;
   }
-#infosPerso {
-    cursor: pointer;
-}
+
 #infosPerso a {
     color: #0A4158;
     text-shadow: 1px 3px 2px #4B8378;
