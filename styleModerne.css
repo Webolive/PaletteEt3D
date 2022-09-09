@@ -300,6 +300,17 @@ footer {
     padding: 0 20px;
     color: #0A4158;
 }
+.fa-facebook {
+    color: rgb(1, 101, 225);
+}
+.fa-instagram {
+    color:rgb(131, 58, 160)
+}
+.fa-linkedin {
+    color:rgb(0, 119, 181)
+}
+
+
 
 
 /* en dessous de 700px */
