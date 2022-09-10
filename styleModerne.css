@@ -59,29 +59,14 @@ nav .a2 {
     background: transparent;
 }
 .titre h1 {
-    position: relative;
     text-transform: uppercase;
     color: transparent;
-    font-size: 3.5rem;
-}
-.titre h1::before {
+    font-size: 4rem;
     content: attr(data-text);
-    position: absolute;
     height: 100%;
     background: -webkit-linear-gradient(rgba(255,150,54,1) 0%, rgba(75,131,120,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animate 2000ms linear forwards;
-    animation-delay: 700ms;
-}
-@keyframes animate
-{
-    0%, 20% {
-        width: 0;
-    }
-    40%, 70%, 100% {
-        width: 100%;
-    }
 }
 
 .citation {
@@ -335,9 +320,10 @@ footer {
         text-align: center;
     }
     .titre h1 {
-        width: 52%;
-        font-size: 1.2rem;
+        width: 100%;
+        font-size: 1.6rem;
     }
+        
     .citation {
         height: 50px;
         font-size: 0.8em;
@@ -437,7 +423,7 @@ footer {
         padding-top: 130px;
     }
     .titre h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .citation {
         font-size: 1.2rem;
